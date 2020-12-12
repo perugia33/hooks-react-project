@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+
+import CounterComponent from './Components/CounterComponent'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className= "header">Namaste Tea Inventory</h1>
+      <CounterComponent item = "Twinnings Chamomile" count = {90}  increment = {1}/>
+      <CounterComponent item = "Margaret Hope's Estate Darjeeling" count = {200}  increment= {2}/>
+      <CounterComponent item = "Monabarie Assam" count = {50}  increment = {4}/>
+      <CounterComponent item = "Jungpana Estate 2nd Flush" count = {75}  increment = {3}/>
     </div>
   );
 }
+
 
 export default App;
